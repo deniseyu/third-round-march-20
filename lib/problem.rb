@@ -1,5 +1,5 @@
 require 'prime'
 
-def count_primes_up_to(number)
-	Prime.each(number).to_a.count
+def sum_primes_up_to(number)
+	Prime.each(number).to_a.reduce(:+)
 end
